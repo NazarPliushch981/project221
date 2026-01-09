@@ -1,0 +1,141 @@
+using System;
+
+class WebSite
+{
+    public string name;
+    public string path;
+    public string description;
+    public string ip;
+
+    public void Input()
+    {
+        Console.Write("Назва сайту: ");
+        name = Console.ReadLine();
+
+        Console.Write("Шлях: ");
+        path = Console.ReadLine();
+
+        Console.Write("Опис: ");
+        description = Console.ReadLine();
+
+        Console.Write("IP: ");
+        ip = Console.ReadLine();
+    }
+
+    public void Show()
+    {
+        Console.WriteLine(name);
+        Console.WriteLine(path);
+        Console.WriteLine(description);
+        Console.WriteLine(ip);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        WebSite site = new WebSite();
+        site.Input();
+        site.Show();
+    }
+}
+///////////////////////////////
+
+using System;
+
+class Journal
+{
+    public string name;
+    public int year;
+    public string description;
+    public string phone;
+    public string email;
+
+    public void Input()
+    {
+        Console.Write("Назва журналу: ");
+        name = Console.ReadLine();
+
+        Console.Write("Рік: ");
+        year = int.Parse(Console.ReadLine());
+
+        Console.Write("Опис: ");
+        description = Console.ReadLine();
+
+        Console.Write("Телефон: ");
+        phone = Console.ReadLine();
+
+        Console.Write("Email: ");
+        email = Console.ReadLine();
+    }
+
+    public void Show()
+    {
+        Console.WriteLine(name);
+        Console.WriteLine(year);
+        Console.WriteLine(description);
+        Console.WriteLine(phone);
+        Console.WriteLine(email);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Journal j = new Journal();
+        j.Input();
+        j.Show();
+    }
+}
+///////////////////////////////
+
+
+using System;
+
+class Shop
+{
+    public string name;
+    public string address;
+    public string description;
+    public string phone;
+    public string email;
+
+    public void Input()
+    {
+        Console.Write("Назва магазину: ");
+        name = Console.ReadLine();
+
+        Console.Write("Адреса: ");
+        address = Console.ReadLine();
+
+        Console.Write("Опис: ");
+        description = Console.ReadLine();
+
+        Console.Write("Телефон: ");
+        phone = Console.ReadLine();
+
+        Console.Write("Email: ");
+        email = Console.ReadLine();
+    }
+
+    public void Show()
+    {
+        Console.WriteLine(name);
+        Console.WriteLine(address);
+        Console.WriteLine(description);
+        Console.WriteLine(phone);
+        Console.WriteLine(email);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Shop shop = new Shop();
+        shop.Input();
+        shop.Show();
+    }
+}
